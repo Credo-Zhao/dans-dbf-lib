@@ -1,12 +1,9 @@
 修改说明: 这个库的修改目的是解决dbf数据和类型匹配不上造成的错误.以及使用jdk1.8编译的问题.
-Modification Description: The purpose of modifying this library is to address errors caused by mismatched data and types in dbf files, as well as issues related to using JDK 1.8 for compilation.
-
-============
+(Modification Description: The purpose of modifying this library is to address errors caused by mismatched data and types in dbf files, as well as issues related to using JDK 1.8 for compilation.)\
 
 使用说明: 用jdk1.8编译即可.在dbeaver中直接删除已有的jar,配置这个jar.就可以避免-->因为dbf数据和类型匹配不上造成的错误,造成后续数据无法读取的问题.
-Usage Instructions: Compile using JDK 1.8. In DBeaver, directly delete the existing jar file and configure this modified jar file. This will prevent errors caused by mismatched data and types in dbf files, which can lead to subsequent data being unreadable.
+(Usage Instructions: Compile using JDK 1.8. In DBeaver, directly delete the existing jar file and configure this modified jar file. This will prevent errors caused by mismatched data and types in dbf files, which can lead to subsequent data being unreadable.)
 
-============
 
 
 dans-dbf-lib
