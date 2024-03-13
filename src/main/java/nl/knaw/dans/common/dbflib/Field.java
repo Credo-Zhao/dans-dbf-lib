@@ -66,7 +66,9 @@ public class Field
     public Field(final String name, final Type type, final int length, final int decimalCount)
     {
         this.name = name;
-        this.type = type;
+        // Set all field types to string to prevent data and type mismatch errors in DBF files.
+        // 设置所有字段类型为字符串,防止dbf文件中的数据和类型匹配不上,造成错误.
+        this.type = Type.CHARACTER;
         this.length = type.getLength() == -1 ? length : type.getLength();
         this.decimalCount = decimalCount;
         validator = DataFormatValidatorFactory.createValidator(this);
@@ -89,7 +91,9 @@ public class Field
      */
     public Type getType()
     {
-        return type;
+        // Set all field types to string to prevent data and type mismatch errors in DBF files.
+        // 设置所有字段类型为字符串,防止dbf文件中的数据和类型匹配不上,造成错误.
+        return Type.CHARACTER;
     }
 
     /**
